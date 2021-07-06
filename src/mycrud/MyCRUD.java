@@ -22,7 +22,7 @@ public class MyCRUD {
     private Connection conn;
     public MyCRUD(String table) {
         try {
-            conn = DriverManager.getConnection(MyDB.database, MyDB.username, MyDB.password);
+            conn = DriverManager.getConnection(MyDB.DATABASE_CONNECTION, MyDB.USERNAME, MyDB.PASSWORD);
             MyDB.setTable(table);
         } catch (SQLException ex) {
             Logger.getLogger(MyCRUD.class.getName()).log(Level.SEVERE, null, ex);

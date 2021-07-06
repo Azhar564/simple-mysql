@@ -16,9 +16,9 @@ import java.util.Arrays;
 public class MyDB {
     //Connection Variable
     public static final String 
-            database = "jdbc:mysql://127.0.0.1:3306/siperpus", 
-            username = "root", 
-            password = "";
+            DATABASE_CONNECTION = "jdbc:mysql://127.0.0.1:3306/siperpus", 
+            USERNAME = "root", 
+            PASSWORD = "";
     
     //Metadata Variable
     public static int rowCount, columnCount;
